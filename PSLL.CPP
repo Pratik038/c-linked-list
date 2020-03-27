@@ -21,7 +21,7 @@ void insertAtEnd(){
 	cin>>temp->data;
 	temp->next=NULL;
 	if(start==NULL)
-		start=NULL;
+		start=temp;
 	else{
 		node *cur=start;
 		while(cur->next!=NULL)
