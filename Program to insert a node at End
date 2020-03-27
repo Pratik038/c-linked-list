@@ -1,0 +1,8 @@
+// if head node is globally declared .
+
+void insertAtBeg(int item){ // to add a node at beginning
+	Node *temp=new Node;
+	temp->data=item;
+	temp->next=head;
+	head=temp;
+}
