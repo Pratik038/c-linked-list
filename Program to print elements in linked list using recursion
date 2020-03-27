@@ -1,0 +1,5 @@
+void print(Node *p){
+	if(p==NULL) return;
+	cout<<p->data<<" ";
+	print(p->next);
+}
