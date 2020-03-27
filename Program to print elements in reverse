@@ -1,0 +1,6 @@
+void reversePrint(Node *p){
+	if(p==NULL) return;
+	
+	reversePrint(p->next);
+	cout<<p->data<<" ";
+}
