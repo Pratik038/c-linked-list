@@ -1,0 +1,8 @@
+int deleteAtBeg(){
+	if(head==NULL) return -1;
+	Node *temp=head;
+	head=head->next;
+	int item=temp->data;
+	delete temp;
+	return item;
+}
