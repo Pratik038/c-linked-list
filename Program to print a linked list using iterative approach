@@ -1,0 +1,9 @@
+void print(){
+	Node *temp=head;
+	cout<<"List is";
+	while(temp!=NULL){
+		cout<<temp->data<<" ";
+		temp=temp->next;
+	}
+	cout<<endl;
+}
