@@ -1,0 +1,13 @@
+// if head node is global we need not to pass it as an argument.
+
+void insertAtEnd(int item){ // to add a node at end
+	Node *temp=new Node;
+	temp->data=item;
+	temp->next=NULL;
+	if(head==NULL) head=temp;
+	else{
+		Node *cur=head;
+		while(cur->next!=NULL) cur=cur->next;
+		cur->next=temp;
+	}
+}
