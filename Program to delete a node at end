@@ -1,0 +1,13 @@
+int deleteAtEnd(){
+	if(head==NULL) return -1;
+	Node *temp,*cur;
+	temp=cur=head;
+	while(cur->next!=NULL){
+		temp=cur;
+		cur=cur->next;
+	}
+	int item=cur->data;
+	temp->next=NULL;
+	delete cur;
+	return item;
+}
