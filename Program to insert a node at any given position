@@ -1,0 +1,16 @@
+// if head is declared globally.
+void insertAtPos(int item,int pos){ // to add a node at any given position where n is 1 based index.
+	Node *temp=new Node;
+	temp->data=item;
+	temp->next=NULL;
+	if(pos==1){
+		temp->next=head;
+		head=temp;
+		return;
+	}
+	Node *cur=head;
+	for(int i=0;i<pos-2;i++) cur=cur->next;
+	
+	temp->next=cur->next;
+	cur->next=temp;
+}
